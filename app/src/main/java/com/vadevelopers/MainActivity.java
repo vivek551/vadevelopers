@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (hasConnect) {
-            webView.loadUrl("https://myayurmanthra.com/");
+            webView.loadUrl("https://vadevelopers.blogspot.com/");
             final ProgressDialog progress = new ProgressDialog(this);
             progress.setMessage("Please wait while we connect to server...");
             progress.show();
