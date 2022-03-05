@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
-        //test
 
 
         ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
