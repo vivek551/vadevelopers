@@ -77,17 +77,17 @@ public class AdapterPost extends RecyclerView.Adapter<AdapterPost.HolderPost> {
         //format date
 
         String gmtDate = published;
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd 'T'HH:mm:ss");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd 'Time' HH:mm:ss");
         SimpleDateFormat dateFormat2 = new SimpleDateFormat("dd/mm/yyyy K:mm a"); //25/10/2020 02:10pm
 
-        String formattedDate = "";
+        String formattedDate = " ";
 
         try {
             Date date = dateFormat.parse(gmtDate);
             formattedDate = dateFormat2.format(date);
 
 
-        }catch (Exception e){
+        } catch (Exception e) {
             formattedDate = published;
             e.printStackTrace();
 
@@ -95,7 +95,7 @@ public class AdapterPost extends RecyclerView.Adapter<AdapterPost.HolderPost> {
 
         holder.titletv.setText(title);
         holder.descriptionTv.setText(document.text());
-        holder.publishInfo.setText("By"+authorName+""+formattedDate);//By Vivek Anand
+        holder.publishInfo.setText(" By " + authorName + "  " +  formattedDate);//By Vivek Anand
 
 
     }
