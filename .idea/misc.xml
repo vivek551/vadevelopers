@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android studio projects/Work Space/vadevelopers/app/src/main/res/drawable/shape_rect.xml" value="0.169" />
+        <entry key="..\:/Android studio projects/Work Space/vadevelopers/app/src/main/res/drawable/shape_rect1.xml" value="0.169" />
         <entry key="..\:/Android studio projects/Work Space/vadevelopers/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Android studio projects/Work Space/vadevelopers/app/src/main/res/layout/activity_post_detail.xml" value="0.10208333333333333" />
+        <entry key="..\:/Android studio projects/Work Space/vadevelopers/app/src/main/res/layout/activity_post_detail.xml" value="0.30646766169154227" />
         <entry key="..\:/Android studio projects/Work Space/vadevelopers/app/src/main/res/layout/alert_dialog.xml" value="0.10208333333333333" />
         <entry key="..\:/Android studio projects/Work Space/vadevelopers/app/src/main/res/layout/row_post.xml" value="0.3617710583153348" />
         <entry key="..\:/Vivekanand/Softwares/AndroidProjects/VADevelopers/app/src/main/res/layout/activity_main.xml" value="0.32760416666666664" />

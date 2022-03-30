@@ -1,6 +1,7 @@
 package com.vadevelopers;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,7 +53,7 @@ public class AdapterPost extends RecyclerView.Adapter<AdapterPost.HolderPost> {
 
         String authorName = model.getAutherName();
         String content = model.getContent();
-        String id = model.getContent();
+        String id = model.getId();
         String published = model.getPublished();
         String title = model.getTitle();
         String updated = model.getUpdated();
@@ -96,6 +97,15 @@ public class AdapterPost extends RecyclerView.Adapter<AdapterPost.HolderPost> {
         holder.titletv.setText(title);
         holder.descriptionTv.setText(document.text());
         holder.publishInfo.setText(" By " + authorName + "  " +  formattedDate);//By Vivek Anand
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,PostDetailActivity.class);
+                intent.putExtra("postId", id); // pass post id
+                context.startActivity(intent);
+            }
+        });
 
 
     }

@@ -1,35 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#eee"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eee"
     tools:context=".MainActivity">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:orientation="vertical"
-       android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/SearchEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Search Post"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey">
+
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/SearchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/shape_rect1"
+                android:src="@drawable/ic_search" />
+
+        </LinearLayout>
 
 
-       <androidx.recyclerview.widget.RecyclerView
-           android:id="@+id/postsRv"
-           tools:listitem="@layout/row_post"
-           android:layout_width="match_parent"
-           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-           android:layout_height="match_parent"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postsRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_post" />
 
-       <Button
-           android:id="@+id/loadMorebtn"
-           android:text="Load More"
-           android:background="@color/white"
-           android:textColor="@color/black"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent">
+        <Button
+            android:id="@+id/loadMorebtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:text="Load More"
+            android:textColor="@color/black">
 
-       </Button>
+        </Button>
 
-   </LinearLayout>
+    </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
